@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Hand Cricket Game</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏏 Hand Cricket</h1>
+
+
+        <div class="room">
+
+            Room:
+
+            <strong id="roomDisplay"></strong>
+
+        </div>
+
+
+        <div class="scores">
+
+            <div class="score-card">
+
+                <h2>You</h2>
+
+                <p id="myScore">0</p>
+
+            </div>
+
+
+            <div class="score-card">
+
+                <h2>Opponent</h2>
+
+                <p id="opponentScore">0</p>
+
+            </div>
+
+        </div>
+
+
+        <h2 id="status">
+            Waiting for opponent...
+        </h2>
+
+
+        <p id="target"></p>
+
+
+        <div class="choices">
+
+            <button onclick="makeChoice(1)">
+                1
+            </button>
+
+            <button onclick="makeChoice(2)">
+                2
+            </button>
+
+            <button onclick="makeChoice(3)">
+                3
+            </button>
+
+            <button onclick="makeChoice(4)">
+                4
+            </button>
+
+            <button onclick="makeChoice(5)">
+                5
+            </button>
+
+            <button onclick="makeChoice(6)">
+                6
+            </button>
+
+        </div>
+
+
+        <div class="result">
+
+            <p id="myChoice">
+                Your choice: -
+            </p>
+
+            <p id="opponentChoice">
+                Opponent choice: -
+            </p>
+
+            <h2 id="resultMessage"></h2>
+
+        </div>
+
+
+        <button
+            onclick="location.href='index.html'"
+        >
+            🏠 Leave Game
+        </button>
+
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="js/game.js"></script>
+
+</body>
+
+</html>
