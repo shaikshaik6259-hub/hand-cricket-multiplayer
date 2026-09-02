@@ -1,1 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f2027,
+            #203a43,
+            #2c5364
+        );
+
+    color: white;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    border-radius: 20px;
+
+}
+
+
+h1 {
+
+    font-size: 40px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.card {
+
+    background:
+        rgba(0, 0, 0, 0.2);
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    border-radius: 15px;
+
+}
+
+
+input {
+
+    width: 90%;
+
+    padding: 12px;
+
+    margin: 8px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+}
+
+
+button {
+
+    padding: 12px 20px;
+
+    margin: 8px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+}
+
+
+button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+.room {
+
+    margin: 15px;
+
+    font-size: 20px;
+
+}
+
+
+.scores {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    margin: 30px 0;
+
+}
+
+
+.score-card {
+
+    width: 180px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255, 255, 255, 0.12);
+
+}
+
+
+.score-card p {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    margin-top: 10px;
+
+}
+
+
+.choices {
+
+    margin: 30px 0;
+
+}
+
+
+.choices button {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+}
+
+
+.result {
+
+    margin: 20px;
+
+}
+
+
+#resultMessage {
+
+    margin-top: 20px;
+
+}
+
+
+#message {
+
+    margin-top: 20px;
+
+}
